@@ -4,8 +4,7 @@ Esse relatório tem por objetivo demonstrar como foi pensada a criação da
 solução para o desafio proposta de modelagem e implementação de um sistema de
 votos em pautas. A estrutura do sistema ficou da seguinte forma:
 
-img1
-
+![Imagem1](Imagens/img1.png)
 
 
 
