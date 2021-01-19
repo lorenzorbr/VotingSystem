@@ -17,7 +17,7 @@ public class Schedule {
 
     }
 
-    public Schedule(Long i, String description, Date votingDeadline){
+    public Schedule(Long id, String description, Date votingDeadline){
         this.id = id;
         this.description = description;
         this.votingDeadline = votingDeadline;
