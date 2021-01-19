@@ -4,7 +4,7 @@ Esse relatório tem por objetivo demonstrar como foi pensada a criação da solu
 
 ![Imagem1](Imagens/img1.png)
 
-A primeira camada, representa o frontend, onde acontece a requisição de algo parao backend. Só foi implementado o backend e a parte de requisições foi testada com o Postman. Para a camada de persistência foi utilizado o postgreSQL 13, utilizando o pgAdmin 4. A linguagem utilizada para implementação foi Java e o framework Spring Boot, versão do SDK: Java 8 
+A primeira camada, representa o frontend, onde acontece a requisição de algo para o backend. Só foi implementado o backend e a parte de requisições foi testada com o Postman. Para a camada de persistência foi utilizado o postgreSQL 13, utilizando o pgAdmin 4. A linguagem utilizada para implementação foi Java e o framework Spring Boot, versão do SDK: Java 8 
 
 # Criando Uma Nova Pauta:  
 
