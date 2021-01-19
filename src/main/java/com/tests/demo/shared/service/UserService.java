@@ -22,7 +22,7 @@ public class UserService {
 
     public User createUser(User user){
         ValidateCPF validateCPF = new ValidateCPF();
-        if((user.getName().length() > 0) && validateCPF.isCPF(user.getCpf())) {
+        if((user.getName() != null) && validateCPF.isCPF(user.getCpf())) {
            return repository.save(user);
         }
 
