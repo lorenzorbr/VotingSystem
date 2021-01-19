@@ -1,6 +1,5 @@
 package com.tests.schedule;
 
-
 import com.tests.demo.shared.exception.MainException;
 import com.tests.demo.shared.model.Schedule;
 import com.tests.demo.shared.repository.ScheduleRepository;
