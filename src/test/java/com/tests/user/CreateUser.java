@@ -12,6 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(MockitoExtension.class)
@@ -26,15 +27,22 @@ public class CreateUser {
 
     @Test
     public void success(){
-        User user = new User(1L, "ABC" , "590.817.440-89");
+        User user = new User(1L, "ABC" , "59081744089");
+        Mockito.when(repository.save(user)).thenReturn(user);
+
+        assertEquals(user, service.createUser(user));
+    }
+
+    @Test
+    public void errorCouldNotCreateUser(){
+        User user = new User();
         Mockito.when(repository.save(user)).thenReturn(user);
 
         assertThrows(
                 MainException.class,
                 () -> {
-                    service.getUser(1L);
+                    service.createUser(user);
                 }
         );
     }
-
 }
