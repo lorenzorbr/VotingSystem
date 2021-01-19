@@ -15,7 +15,7 @@ Para criar uma nova pauta, foi utilizado o POST method, através do POSTMAN, pre
 
 # Abrindo Uma Sessão em Uma Pauta: 
 
-Existe a opção de passar a data na requisição do POST junto para criar a sessão com este método, porém se a sessão não for criada através do POST, é possível criar através dom o método PUT, desta forma: 
+Existe a opção de passar a data na requisição do POST junto para criar a sessão com este método, porém se a sessão não for criada através do POST, é possível criar através do método PUT, desta forma: 
 
 ![Imagem3](Imagens/img3.png)
 
