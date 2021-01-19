@@ -5,9 +5,6 @@ import com.tests.demo.shared.exception.MainException;
 import com.tests.demo.shared.model.Schedule;
 import com.tests.demo.shared.repository.ScheduleRepository;
 import org.springframework.stereotype.Service;
-
-
-
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Optional;
