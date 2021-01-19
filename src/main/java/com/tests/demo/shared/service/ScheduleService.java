@@ -18,7 +18,7 @@ public class ScheduleService {
     }
 
     public Schedule createSchedule(Schedule schedule) {
-        if(schedule.getDescription() != null || schedule.getDescription().length() > 0){
+        if(schedule.getDescription() != null && !schedule.getDescription().isEmpty()){
             Schedule response = repository.save(schedule);
             return response;
         }
@@ -32,6 +32,5 @@ public class ScheduleService {
         }
         throw new MainException(Constants.SCHEDULE.ERROR_NOT_FOUND);
     }
-
 
 }
