@@ -16,6 +16,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Date;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(MockitoExtension.class)
@@ -33,10 +34,18 @@ public class CreateSchedule {
         Schedule schedule = new Schedule(1L, "Andershow" , new Date());
         Mockito.when(repository.save(schedule)).thenReturn(schedule);
 
+        assertEquals(schedule, service.createSchedule(schedule));
+    }
+
+    @Test
+    public void errorRequiredDescription(){
+        Schedule schedule = new Schedule();
+        Mockito.when(repository.save(schedule)).thenReturn(schedule);
+
         assertThrows(
                 MainException.class,
                 () -> {
-                    service.getSchedule(1L);
+                    service.createSchedule(schedule);
                 }
         );
     }
