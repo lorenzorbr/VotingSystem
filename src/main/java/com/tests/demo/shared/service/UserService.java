@@ -38,6 +38,7 @@ public class UserService {
     public User getUser(Long id){
         Optional<User> user = repository.findById(id);
         if(user.isPresent()){
+            logger.info(Constants.USER.USER_RETURNED);
             return user.get();
         }
         throw new MainException(Constants.USER.ERROR_NOT_FOUND);

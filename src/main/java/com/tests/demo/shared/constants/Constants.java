@@ -28,6 +28,7 @@ public class Constants {
         String ERROR_NOT_FOUND = "Usuario Nao Encontrado na Base de Dados.";
         String USER_CANNOT_BE_CREATED = "Usuario Nao Pode Ser Criado, nome nulo ou CPF invalido";
         String USER_CREATED = "Usuario criado com sucesso";
+        String USER_RETURNED = "Usuario retornado com sucesso";
     }
 
     @Retention(RetentionPolicy.SOURCE)

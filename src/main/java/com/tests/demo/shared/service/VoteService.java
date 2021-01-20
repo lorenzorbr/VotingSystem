@@ -97,6 +97,7 @@ public class VoteService {
             logger.info(Constants.VOTE.ERROR_ALREADY_VOTED);
             throw new MainException(Constants.VOTE.ERROR_ALREADY_VOTED);
         }
+        logger.info(Constants.VOTE.VOTE_RETURNED);
         return voteRepository.save(vote);
     }
 

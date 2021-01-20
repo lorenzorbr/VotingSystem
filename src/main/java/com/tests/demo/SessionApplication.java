@@ -11,8 +11,10 @@ public class SessionApplication {
 	private static Logger logger = LoggerFactory.getLogger(SessionApplication.class);
 
 	public static void main(String[] args) {
-		logger.info("Aplicacao Iniciada");
+		logger.info("Aplicacao Sendo Iniciada");
 		SpringApplication.run(SessionApplication.class, args);
+		logger.info("API Votos iniciada");
+
 	}
 
 }
